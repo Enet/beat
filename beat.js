@@ -1,3 +1,12 @@
+/*
+    beat.js JavaScript Library v0.0.1
+    https://github.com/Enet/beat
+
+    Released under the GNU GPLv3 license
+    https://github.com/Enet/beat/blob/master/LICENSE
+
+    Date: 2015-10-12T21:17Z
+*/
 'prevent prettydiff';
 'use strict';
 (function () {
@@ -82,6 +91,9 @@
             if ($) {
                 this.dom = $(this);
                 this.shadow = $(this.shadowRoot);
+            } else {
+                this.dom = this;
+                this.shadow = this.shadowRoot;
             }
 
             antiGarbageCollector.add(this);
@@ -271,7 +283,7 @@
             return (link && link.import) ? link.import.querySelector('template') : null;
         },
 
-        registerElement: function (tagName, methods, ext) {
+        registerElement: function (tagName, methods) {
             tagName = tagName.toLowerCase();
             if (protos[tagName]) return;
 
