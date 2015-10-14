@@ -227,10 +227,10 @@ player
   .getElem('video')
   .setAttribute('size', 'big');    // nothing happens
 /*  Console:
-    [object HTMLVideoElement], 'bem', 'created', null
-    [object HTMLVideoElement], 'bem', 'attached', 'created'
+    'S-PLAYER__VIDEO', 'bem', 'created', null
+    'S-PLAYER__VIDEO', 'bem', 'attached', 'created'
     Speed is equal 3
-    [object HTMLVideoElement], 'size', 'big', null  */
+    'S-PLAYER__VIDEO', 'size', 'big', null  */
 ```
 
 ### block.getElem(elemName)
