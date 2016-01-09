@@ -1,7 +1,10 @@
 # beat.js
 *This library is experimental. Don't use this code in the production!*
 
-beat.js uses attributes instead modifiers and provides easy API to register services and new custom elements (blocks and elements in BEM terminology). Templates and shadow DOM are used to encapsulate the internal structure of entities.
+beat.js uses attributes instead modifiers and provides easy API to register services and new custom elements (blocks and elements in BEM terminology). There are two different versions of the library, which have the same API and various implementations.
+
++ **beat.<span>wc</span>.js**: Templates and shadow DOM are used to encapsulate the internal structure of entities.
++ **beat.<span>mo</span>.js**: Classical DOM model is used (entities are not encapsulated). Mutation Observer API detects changes of the DOM tree.
 
 ## Terminology
 ### Block

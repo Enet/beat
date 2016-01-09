@@ -1,14 +1,15 @@
 /*
-    beat.js JavaScript Library v0.0.1
+    beat.js JavaScript Library v0.0.2 (Web Components API)
     https://github.com/Enet/beat
 
     Released under the GNU GPLv3 license
     https://github.com/Enet/beat/blob/master/LICENSE
 
-    Date: 2015-10-12T21:17Z
+    Date: 2016-01-09T13:21Z
 */
 'prevent prettydiff';
 'use strict';
+
 (function () {
     let $ = window.$,
         noConflict = window.beat,
@@ -71,7 +72,7 @@
 
     function executeCallbacks () {
         setImmediate(() => {
-            if (document.readyState === 'complete' && callbacks.length) {
+            if ((document.readyState === 'complete' || document.readyState === 'interactive') && callbacks.length) {
                 callbacks.forEach(callback => callback());
                 callbacks = [];
             }
