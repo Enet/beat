@@ -1,5 +1,8 @@
 # beat.js
-*This library is experimental. Don't use this code in the production!*
+**DON'T USE THE PACKAGE. IT'S DEPRECATED!!!
+USE [React](https://github.com/facebook/react/) INSTEAD.**
+
+*The library is experimental. Don't use it in the production!*
 
 beat.js uses attributes instead modifiers and provides easy API to register services and new custom elements (blocks and elements in BEM terminology). There are two different versions of the library, which have the same API and various implementations.
 
